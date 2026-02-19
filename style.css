@@ -5,23 +5,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #dcdcdc 50%, #e9e9e9 50%);
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 80%) 50%, hsl(0, 0%, 88%) 50%);
     font-family: sans-serif;
 }
 *{
     margin: 0;
     padding: 0;
 }
+
 main{
     width: 300px;
-    height: max-content;
-    min-height: 300px;
-    background-color: #f7f7f7f7;
+    max-height: 450px;
+    background-color: hsla(0, 0%, 97%, 0.869);
     border-radius: 30px;
     box-shadow: 0 30px 50px #5553;
-    padding:  30px;
+    padding:  20px;
     box-sizing: border-box;
 }
+/* Form Part */
 main form{
     border: 1px solid #5553;
     display: flex;
@@ -39,28 +40,34 @@ main form i{
     opacity: 0.7;
 }
 
+/* City, Temperature, Description Parts */
 main .result{
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: center;
 }
 main .result .name{
     font-weight: bold;
-    font-size: large;
+    font-size:16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    color: rgba(2, 2, 31, 0.762);
 }
 main .temperature img{
-    width: 150px;
+    width: 130px;
     filter: drop-shadow(0 10px 50px #888);
 }
 main .temperature figcaption{
-    font-size: 3em;
+    margin-top: -10px;
+    font-size: 2em;
+    color: rgba(0, 0, 30, 0.862);
 }
 main .description{
-    padding: 10px 0 20px;
+    padding-bottom:10px;
+    color: rgba(0, 0, 30, 0.862);
 }
+
+/* Clouds, Humidity, pressure Part */
 main ul{
     list-style-type: none;
     display: grid;
@@ -69,18 +76,19 @@ main ul{
 }
 main ul li{
     background-color: #f78a55;
-    color: #fff;
+    color: hsl(0, 0%, 96%);
     border-radius: 10px;
-    padding:20px 10px;
+    padding:10px;
     background-image: linear-gradient(to bottom, transparent 50%, #0003 50%);
     font-weight: bold;
-    font-size: small;
+    font-size:smaller;
 }
 main ul li i{
     font-size: 2em;
     display: block!important;
-    margin: 20px 20%;
+    margin: 20px 23%;
 }
+
 main ul li:nth-child(2){
     background-color: #b56291;
 }
@@ -88,4 +96,25 @@ main ul li:nth-child(3){
     background-color: #48567b;
 }
 
+/* Error Class */
+main.error{
+    animation: errorEffect 0.3 linear 1;
+}
+@keyframes errorEffect{
+    0%{
+        transform: translate(10px, 5px);
+    }
+    25%{
+        transform: translate(-5px, 0);
+    }
+    50%{
+        transform: translate(8px, 2px);
+    }
+    75%{
+        transform: translate(-2px, 5px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
  
