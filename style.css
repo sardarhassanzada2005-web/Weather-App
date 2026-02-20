@@ -1,4 +1,6 @@
 
+
+
 body{
     margin: 0;
     min-height: 100vh;
@@ -8,9 +10,12 @@ body{
     background-image: linear-gradient(to bottom, hsl(0, 0%, 80%) 50%, hsl(0, 0%, 88%) 50%);
     font-family: sans-serif;
 }
+
+
 *{
     margin: 0;
     padding: 0;
+
 }
 
 main{
@@ -22,6 +27,7 @@ main{
     padding:  20px;
     box-sizing: border-box;
 }
+
 /* Form Part */
 main form{
     border: 1px solid #5553;
@@ -53,20 +59,31 @@ main .result .name{
     align-items: center;
     color: rgba(2, 2, 31, 0.762);
 }
+main .result .name figcaption{
+    margin-right: 10px;
+}
+
 main .temperature img{
     width: 130px;
     filter: drop-shadow(0 10px 50px #888);
+    background: none;
+    border-radius: 0;
 }
 main .temperature figcaption{
     margin-top: -10px;
     font-size: 2em;
     color: rgba(0, 0, 30, 0.862);
+    background: none;
 }
 main .description{
     padding-bottom:10px;
     color: rgba(0, 0, 30, 0.862);
+    text-transform: capitalize;
 }
 
+.description{
+    margin: 10px 0 0;
+}
 /* Clouds, Humidity, pressure Part */
 main ul{
     list-style-type: none;
@@ -97,7 +114,7 @@ main ul li:nth-child(3){
 }
 
 /* Error Class */
-main.error{
+main .error{
     animation: errorEffect 0.3 linear 1;
 }
 @keyframes errorEffect{
