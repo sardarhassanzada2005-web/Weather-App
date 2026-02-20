@@ -2,7 +2,7 @@
 # 📝 Weather App( API )
 
 >### click [_here_](https://sardarhassanzada2005-web.github.io/Weather-App/) to see demo
-![weather-App](image/127.0.0.1_5500_index.html%20(1).png)
+![weather-App](image/img.png)
 ### Overview
     This project is a small weather application that fetches and display sweather information
     for a selected city using a public API.
