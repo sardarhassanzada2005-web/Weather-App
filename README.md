@@ -1,9 +1,8 @@
 
 # 📝 Weather App( API )
 
->### click [_here_](https://sardarhassanzada2005-web.github.io/weather-app/) to see demo
-<<<<<<< HEAD
-![weather-App]()
+>### click [_here_](https://sardarhassanzada2005-web.github.io/Weather-App/) to see demo
+![weather-App](image/127.0.0.1_5500_index.html%20(1).png)
 ### Overview
     This project is a small weather application that fetches and display sweather information
     for a selected city using a public API.
@@ -19,12 +18,15 @@
     - Public Weather API
 ### What I Learned
     - How to fetch data from an external API
-    - How to use async/await in JavaScript
     - How to handle user input
     - How to work with JSON data
     - How to handle simple errors form API
 ### Purpose
     I built this project to practice using APIs and working with real
     weather data.
+### Next Step
+    - Add loading
+    - Error Handling
+    - Clean UX
 
 This project will be improved step by step as I continue learnig.
